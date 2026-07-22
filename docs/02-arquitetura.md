@@ -20,8 +20,9 @@
 src/
   app/        # Apenas rotas, layouts e arquivos de SEO. Sem lógica de negócio.
   components/
-    ui/       # Primitivos shadcn/ui (Button, Card, Accordion...)
-    sections/ # Seções de landing page (Hero, Pricing, FAQ...)
+    ui/        # Primitivos shadcn/ui (Button, Card, Accordion...)
+    sections/  # Seções de landing page (Hero, Pricing, FAQ...)
+    animation/ # Wrappers de animação (Reveal)
   features/   # Funcionalidades com estado/lógica (ex.: contact-form/)
   hooks/      # Hooks reutilizáveis
   lib/        # Funções puras, utilitários, configuração do site

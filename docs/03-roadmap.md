@@ -10,14 +10,14 @@
 - Página inicial mínima com CTA
 - Documentação inicial
 
-## Sprint 2 — Biblioteca de componentes (próxima)
+## Sprint 2 — Biblioteca de componentes ✅
 
 - Primitivos shadcn/ui: Button, Card, Accordion, Input, Textarea, Label
 - Seções: Navbar, Hero, Services, Stats, Testimonials, Pricing, FAQ, CTA, Contact, Footer
 - WhatsApp Button flutuante
-- Animações discretas de entrada (Framer Motion)
+- Animações discretas de entrada (Framer Motion via `Reveal`, com suporte a `prefers-reduced-motion`)
 
-## Sprint 3 — Site institucional da Gtech Studio
+## Sprint 3 — Site institucional da Gtech Studio (próxima)
 
 - Home completa composta pelas seções
 - Formulário de contato (RHF + Zod)
