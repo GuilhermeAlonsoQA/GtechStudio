@@ -18,6 +18,10 @@ export const consultores: NicheTemplate = {
   slug: "consultores",
   nicheLabel: "Consultores",
   nicheIcon: Target,
+  accent: {
+    from: "#1d4ed8",
+    to: "#38bdf8",
+  },
   business: {
     name: "Vetor Consultoria",
     whatsapp,

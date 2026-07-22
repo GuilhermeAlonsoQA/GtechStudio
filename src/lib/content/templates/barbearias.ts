@@ -18,6 +18,10 @@ export const barbearias: NicheTemplate = {
   slug: "barbearias",
   nicheLabel: "Barbearias",
   nicheIcon: Scissors,
+  accent: {
+    from: "#b91c1c",
+    to: "#f59e0b",
+  },
   business: {
     name: "Barbearia Navalha de Ouro",
     whatsapp,

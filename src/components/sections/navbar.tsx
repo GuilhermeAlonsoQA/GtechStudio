@@ -17,7 +17,7 @@ export function Navbar({ brand, items, cta }: NavbarProps) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-neutral-950/85 text-neutral-50 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6">
         <Link href="/" className="text-lg font-semibold tracking-tight">
           {brand}
@@ -28,7 +28,7 @@ export function Navbar({ brand, items, cta }: NavbarProps) {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm text-neutral-400 transition-colors hover:text-neutral-50"
             >
               {item.label}
             </Link>
@@ -36,7 +36,10 @@ export function Navbar({ brand, items, cta }: NavbarProps) {
         </nav>
 
         <div className="hidden md:block">
-          <Button asChild>
+          <Button
+            asChild
+            className="bg-white text-neutral-950 hover:bg-neutral-200"
+          >
             <Link href={cta.href}>{cta.label}</Link>
           </Button>
         </div>
@@ -44,7 +47,7 @@ export function Navbar({ brand, items, cta }: NavbarProps) {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="text-neutral-50 hover:bg-white/10 hover:text-neutral-50 md:hidden"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
@@ -55,7 +58,7 @@ export function Navbar({ brand, items, cta }: NavbarProps) {
 
       {open && (
         <nav
-          className="border-t px-6 py-4 md:hidden"
+          className="border-t border-white/10 px-6 py-4 md:hidden"
           aria-label="Principal (celular)"
         >
           <ul className="flex flex-col gap-4">
@@ -63,7 +66,7 @@ export function Navbar({ brand, items, cta }: NavbarProps) {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-sm text-neutral-400 transition-colors hover:text-neutral-50"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
@@ -71,7 +74,10 @@ export function Navbar({ brand, items, cta }: NavbarProps) {
               </li>
             ))}
             <li>
-              <Button asChild className="w-full">
+              <Button
+                asChild
+                className="w-full bg-white text-neutral-950 hover:bg-neutral-200"
+              >
                 <Link href={cta.href} onClick={() => setOpen(false)}>
                   {cta.label}
                 </Link>

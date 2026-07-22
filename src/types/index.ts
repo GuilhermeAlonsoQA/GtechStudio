@@ -60,6 +60,10 @@ export interface NicheTemplate {
   slug: string;
   nicheLabel: string;
   nicheIcon: LucideIcon;
+  accent: {
+    from: string;
+    to: string;
+  };
   business: {
     name: string;
     whatsapp: string;

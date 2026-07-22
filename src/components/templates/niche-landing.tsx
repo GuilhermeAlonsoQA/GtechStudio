@@ -18,12 +18,19 @@ interface NicheLandingProps {
 
 export function NicheLanding({ template }: NicheLandingProps) {
   return (
-    <>
+    <div
+      style={
+        {
+          "--brand-from": template.accent.from,
+          "--brand-to": template.accent.to,
+        } as React.CSSProperties
+      }
+    >
       <DemoBanner nicheLabel={template.nicheLabel} />
       <Navbar
         brand={
           <span className="flex items-center gap-2.5">
-            <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+            <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-2 text-white">
               <template.nicheIcon className="size-4.5" aria-hidden />
             </span>
             {template.business.name}
@@ -78,6 +85,6 @@ export function NicheLanding({ template }: NicheLandingProps) {
         items={template.nav}
       />
       <WhatsAppButton href={template.business.whatsapp} />
-    </>
+    </div>
   );
 }

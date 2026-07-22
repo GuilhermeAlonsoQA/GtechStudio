@@ -18,6 +18,10 @@ export const dentistas: NicheTemplate = {
   slug: "dentistas",
   nicheLabel: "Dentistas",
   nicheIcon: Smile,
+  accent: {
+    from: "#0e7490",
+    to: "#22d3ee",
+  },
   business: {
     name: "Clínica Sorriso Prime",
     whatsapp,

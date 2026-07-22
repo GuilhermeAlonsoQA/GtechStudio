@@ -16,14 +16,22 @@ export function TemplatePreview({ template }: TemplatePreviewProps) {
         </span>
       </div>
 
-      <div className="relative overflow-hidden">
+      <div
+        className="relative overflow-hidden bg-neutral-950 text-neutral-50"
+        style={
+          {
+            "--brand-from": template.accent.from,
+            "--brand-to": template.accent.to,
+          } as React.CSSProperties
+        }
+      >
         <div aria-hidden className="pointer-events-none absolute inset-0">
-          <div className="absolute -top-10 left-1/2 h-24 w-56 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand/20 to-brand-2/20 blur-2xl" />
+          <div className="absolute -top-10 left-1/2 h-24 w-56 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand/40 to-brand-2/40 blur-2xl" />
         </div>
 
-        <div className="relative flex items-center justify-between border-b px-4 py-2.5">
+        <div className="relative flex items-center justify-between border-b border-white/10 px-4 py-2.5">
           <span className="flex items-center gap-1.5">
-            <span className="flex size-5 items-center justify-center rounded-md bg-primary text-primary-foreground">
+            <span className="flex size-5 items-center justify-center rounded-md bg-gradient-to-br from-brand to-brand-2 text-white">
               <template.nicheIcon className="size-3" aria-hidden />
             </span>
             <span className="max-w-28 truncate text-[10px] font-semibold">
@@ -31,9 +39,9 @@ export function TemplatePreview({ template }: TemplatePreviewProps) {
             </span>
           </span>
           <span aria-hidden className="flex items-center gap-2">
-            <span className="h-1 w-6 rounded-full bg-muted-foreground/30" />
-            <span className="h-1 w-6 rounded-full bg-muted-foreground/30" />
-            <span className="rounded-full bg-primary px-2 py-1 text-[8px] font-medium text-primary-foreground">
+            <span className="h-1 w-6 rounded-full bg-white/20" />
+            <span className="h-1 w-6 rounded-full bg-white/20" />
+            <span className="rounded-full bg-white px-2 py-1 text-[8px] font-medium text-neutral-950">
               {template.navCta.label}
             </span>
           </span>
@@ -41,7 +49,7 @@ export function TemplatePreview({ template }: TemplatePreviewProps) {
 
         <div className="relative flex flex-col items-center gap-2.5 px-6 py-7 text-center">
           {template.hero.eyebrow && (
-            <span className="inline-flex items-center gap-1 rounded-full border bg-background/70 px-2 py-0.5 text-[8px] font-medium tracking-wider text-muted-foreground uppercase">
+            <span className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/5 px-2 py-0.5 text-[8px] font-medium tracking-wider text-neutral-300 uppercase">
               <span
                 aria-hidden
                 className="size-1 rounded-full bg-gradient-to-r from-brand to-brand-2"
@@ -53,10 +61,10 @@ export function TemplatePreview({ template }: TemplatePreviewProps) {
             {template.hero.title}
           </p>
           <span aria-hidden className="mt-1 flex items-center gap-1.5">
-            <span className="rounded-full bg-primary px-2.5 py-1 text-[8px] font-medium text-primary-foreground">
+            <span className="rounded-full bg-white px-2.5 py-1 text-[8px] font-medium text-neutral-950">
               {template.hero.primaryCta.label}
             </span>
-            <span className="rounded-full border px-2.5 py-1 text-[8px] text-muted-foreground">
+            <span className="rounded-full border border-white/20 px-2.5 py-1 text-[8px] text-neutral-300">
               {template.hero.secondaryCta?.label ?? "Saiba mais"}
             </span>
           </span>

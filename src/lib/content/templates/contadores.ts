@@ -18,6 +18,10 @@ export const contadores: NicheTemplate = {
   slug: "contadores",
   nicheLabel: "Contadores",
   nicheIcon: Calculator,
+  accent: {
+    from: "#047857",
+    to: "#2dd4bf",
+  },
   business: {
     name: "Contare Contabilidade",
     whatsapp,

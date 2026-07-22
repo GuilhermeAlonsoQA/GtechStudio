@@ -18,6 +18,10 @@ export const psicologos: NicheTemplate = {
   slug: "psicologos",
   nicheLabel: "Psicólogos",
   nicheIcon: Brain,
+  accent: {
+    from: "#7c3aed",
+    to: "#ec4899",
+  },
   business: {
     name: "Espaço Mente Leve",
     whatsapp,

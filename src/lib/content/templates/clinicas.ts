@@ -18,6 +18,10 @@ export const clinicas: NicheTemplate = {
   slug: "clinicas",
   nicheLabel: "Clínicas",
   nicheIcon: Stethoscope,
+  accent: {
+    from: "#0369a1",
+    to: "#22d3ee",
+  },
   business: {
     name: "Clínica Vitalis",
     whatsapp,

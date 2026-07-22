@@ -18,6 +18,10 @@ export const arquitetos: NicheTemplate = {
   slug: "arquitetos",
   nicheLabel: "Arquitetos",
   nicheIcon: DraftingCompass,
+  accent: {
+    from: "#c2410c",
+    to: "#fbbf24",
+  },
   business: {
     name: "Atelier Forma Arquitetura",
     whatsapp,

@@ -17,6 +17,10 @@ export const advogados: NicheTemplate = {
   slug: "advogados",
   nicheLabel: "Advogados",
   nicheIcon: Scale,
+  accent: {
+    from: "#92400e",
+    to: "#f59e0b",
+  },
   business: {
     name: "Almeida & Prado Advocacia",
     whatsapp,
