@@ -22,6 +22,7 @@ src/
   components/
     ui/        # Primitivos shadcn/ui (Button, Card, Accordion...)
     sections/  # Seções de landing page (Hero, Pricing, FAQ...)
+    templates/ # Composição de template de nicho (NicheLanding, DemoBanner)
     animation/ # Wrappers de animação (Reveal)
   features/   # Funcionalidades com estado/lógica (ex.: contact-form/)
   hooks/      # Hooks reutilizáveis

@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import { Footer } from "@/components/sections/footer";
-import { Navbar } from "@/components/sections/navbar";
-import { WhatsAppButton } from "@/components/sections/whatsapp-button";
-import { footerItems, navCta, navItems } from "@/lib/content/site";
 import { siteConfig } from "@/lib/site-config";
 
 import "@/styles/globals.css";
@@ -72,14 +68,7 @@ export default function RootLayout({
             __html: JSON.stringify(organizationJsonLd),
           }}
         />
-        <Navbar brand={siteConfig.name} items={navItems} cta={navCta} />
         {children}
-        <Footer
-          brand={siteConfig.name}
-          description={siteConfig.description}
-          items={footerItems}
-        />
-        <WhatsAppButton href={siteConfig.links.whatsapp} />
       </body>
     </html>
   );

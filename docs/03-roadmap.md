@@ -26,14 +26,19 @@
 - Navbar, Footer e WhatsApp Button no layout (compartilhados por futuras páginas)
 - Nota: seção Testimonials fica fora da home até existirem depoimentos reais de clientes
 
-## Sprint 4 — Sistema de templates por nicho (próxima)
+## Sprint 4 — Sistema de templates por nicho ✅
 
-- Estrutura de conteúdo por nicho (dados tipados)
-- Template Advogados (primeiro nicho)
-- Template Dentistas
+- Tipo `NicheTemplate`: todo o conteúdo de um nicho em um único objeto tipado
+- Composição `NicheLanding`: uma página inteira montada a partir da biblioteca de seções
+- Rota dinâmica `/modelos/[slug]` com SSG (`generateStaticParams`) e metadata por template
+- Route group `(site)`: navbar/footer da Gtech separados do chrome dos templates
+- Banner de demonstração com CTA "Quero um site assim" nos templates
+- Template Advogados (`/modelos/advogados`) e Dentistas (`/modelos/dentistas`)
+- Sitemap atualizado com as rotas dos modelos
 
 ## Sprint 5+ — Backlog
 
-- Demais nichos (Psicólogos, Contadores, Consultores, Arquitetos, Barbearias, Clínicas)
-- Página de portfólio/demos
+- Demais nichos (Psicólogos, Contadores, Consultores, Arquitetos, Barbearias, Clínicas) — apenas um arquivo de conteúdo cada
+- Página índice de portfólio `/modelos` + link "Modelos" na navegação da Gtech
 - Guia de captação (Google Business Profile)
+- Seção Testimonials na home da Gtech quando houver depoimentos reais

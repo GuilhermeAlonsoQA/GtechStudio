@@ -11,17 +11,23 @@ import { Textarea } from "@/components/ui/textarea";
 import { siteConfig } from "@/lib/site-config";
 import { contactFormSchema, type ContactFormValues } from "./schema";
 
-function buildWhatsAppUrl(values: ContactFormValues): string {
+function buildWhatsAppUrl(whatsappHref: string, values: ContactFormValues): string {
   const text = [
     `Olá! Meu nome é ${values.name}.`,
     values.message,
     `Meu e-mail para contato: ${values.email}`,
   ].join("\n\n");
 
-  return `${siteConfig.links.whatsapp}?text=${encodeURIComponent(text)}`;
+  return `${whatsappHref}?text=${encodeURIComponent(text)}`;
 }
 
-export function ContactForm() {
+interface ContactFormProps {
+  whatsappHref?: string;
+}
+
+export function ContactForm({
+  whatsappHref = siteConfig.links.whatsapp,
+}: ContactFormProps) {
   const {
     register,
     handleSubmit,
@@ -31,7 +37,11 @@ export function ContactForm() {
   });
 
   function onSubmit(values: ContactFormValues) {
-    window.open(buildWhatsAppUrl(values), "_blank", "noopener,noreferrer");
+    window.open(
+      buildWhatsAppUrl(whatsappHref, values),
+      "_blank",
+      "noopener,noreferrer"
+    );
   }
 
   return (

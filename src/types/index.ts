@@ -48,3 +48,43 @@ export interface ContactChannel {
   value: string;
   href: string;
 }
+
+export interface SectionContent<TItem> {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  items: TItem[];
+}
+
+export interface NicheTemplate {
+  slug: string;
+  nicheLabel: string;
+  business: {
+    name: string;
+    whatsapp: string;
+  };
+  seo: {
+    title: string;
+    description: string;
+  };
+  nav: NavItem[];
+  navCta: CtaLink;
+  hero: {
+    eyebrow?: string;
+    title: string;
+    description: string;
+    primaryCta: CtaLink;
+    secondaryCta?: CtaLink;
+  };
+  stats: Stat[];
+  services: SectionContent<Service>;
+  testimonials: SectionContent<Testimonial>;
+  faq: SectionContent<FaqItem>;
+  cta: {
+    title: string;
+    description?: string;
+    cta: CtaLink;
+  };
+  contact: SectionContent<ContactChannel>;
+  footerDescription: string;
+}
