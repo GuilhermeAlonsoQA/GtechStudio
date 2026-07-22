@@ -2,8 +2,6 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-import { cn } from "@/lib/utils";
-
 interface RevealProps {
   children: React.ReactNode;
   className?: string;
@@ -13,17 +11,24 @@ interface RevealProps {
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
   const reducedMotion = useReducedMotion();
 
-  if (reducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
-
   return (
     <motion.div
-      className={cn(className)}
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      className={className}
+      initial="hidden"
+      whileInView="visible"
       viewport={{ once: true, margin: "-64px" }}
-      transition={{ duration: 0.5, delay, ease: "easeOut" }}
+      variants={{
+        hidden: { opacity: 0, y: reducedMotion ? 0 : 16 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: reducedMotion ? 0 : 0.5,
+            delay: reducedMotion ? 0 : delay,
+            ease: "easeOut",
+          },
+        },
+      }}
     >
       {children}
     </motion.div>
