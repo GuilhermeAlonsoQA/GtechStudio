@@ -59,6 +59,7 @@ export interface SectionContent<TItem> {
 export interface NicheTemplate {
   slug: string;
   nicheLabel: string;
+  nicheIcon: LucideIcon;
   business: {
     name: string;
     whatsapp: string;

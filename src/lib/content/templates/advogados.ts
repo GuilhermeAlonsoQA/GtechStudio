@@ -16,6 +16,7 @@ const whatsapp = "https://wa.me/5500000000000";
 export const advogados: NicheTemplate = {
   slug: "advogados",
   nicheLabel: "Advogados",
+  nicheIcon: Scale,
   business: {
     name: "Almeida & Prado Advocacia",
     whatsapp,

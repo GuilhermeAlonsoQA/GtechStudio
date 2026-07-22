@@ -17,6 +17,7 @@ const whatsapp = "https://wa.me/5500000000000";
 export const dentistas: NicheTemplate = {
   slug: "dentistas",
   nicheLabel: "Dentistas",
+  nicheIcon: Smile,
   business: {
     name: "Clínica Sorriso Prime",
     whatsapp,

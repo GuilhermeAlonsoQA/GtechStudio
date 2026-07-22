@@ -36,9 +36,20 @@
 - Template Advogados (`/modelos/advogados`) e Dentistas (`/modelos/dentistas`)
 - Sitemap atualizado com as rotas dos modelos
 
-## Sprint 5+ — Backlog
+## Sprint 5 — Portfólio e expansão de nichos ✅
 
-- Demais nichos (Psicólogos, Contadores, Consultores, Arquitetos, Barbearias, Clínicas) — apenas um arquivo de conteúdo cada
-- Página índice de portfólio `/modelos` + link "Modelos" na navegação da Gtech
+- Página índice `/modelos` com cards de todos os templates
+- Link "Modelos" na navegação da Gtech
+- 6 novos nichos: Psicólogos, Contadores, Consultores, Arquitetos, Barbearias e Clínicas
+- Campo `nicheIcon` no tipo `NicheTemplate` para os cards do portfólio
+- Sitemap com 10 URLs (home + índice + 8 modelos)
+- Todos os 8 nichos do master prompt concluídos
+
+## Sprint 6+ — Backlog
+
 - Guia de captação (Google Business Profile)
 - Seção Testimonials na home da Gtech quando houver depoimentos reais
+- Imagem Open Graph com a identidade visual
+- Endpoint de e-mail para o formulário (Resend ou similar)
+- Imagens ilustrativas por nicho quando houver banco de assets
+- CI (lint + typecheck + build) via GitHub Actions
