@@ -36,12 +36,11 @@ export default function TemplatesPage() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {templates.map((template, index) => (
             <Reveal key={template.slug} delay={index * 0.06}>
-              <Card className="h-full">
+              <Card className="h-full transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-md">
                 <CardHeader>
-                  <template.nicheIcon
-                    className="mb-2 size-6 text-muted-foreground"
-                    aria-hidden
-                  />
+                  <span className="mb-3 inline-flex size-10 items-center justify-center rounded-lg border bg-muted/60">
+                    <template.nicheIcon className="size-5 text-brand" aria-hidden />
+                  </span>
                   <CardTitle>{template.nicheLabel}</CardTitle>
                   <CardDescription>{template.business.name}</CardDescription>
                 </CardHeader>

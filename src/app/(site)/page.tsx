@@ -19,7 +19,7 @@ import {
 export default function HomePage() {
   return (
     <main>
-      <Hero {...hero} />
+      <Hero {...hero} highlight="Premium" />
       <Stats stats={stats} />
       <Services
         id="servicos"

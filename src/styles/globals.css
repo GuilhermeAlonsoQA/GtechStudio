@@ -49,6 +49,8 @@
 }
 
 @theme inline {
+  --color-brand: #6366f1;
+  --color-brand-2: #a855f7;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

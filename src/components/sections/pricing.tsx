@@ -38,10 +38,15 @@ export function Pricing({
           <Reveal key={plan.name} delay={index * 0.08}>
             <Card
               className={cn(
-                "h-full",
-                plan.highlighted && "border-primary shadow-md"
+                "relative h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-md",
+                plan.highlighted && "border-brand/50 shadow-lg"
               )}
             >
+              {plan.highlighted && (
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand to-brand-2 px-3 py-1 text-xs font-medium text-white">
+                  Mais escolhido
+                </span>
+              )}
               <CardHeader>
                 <CardTitle className="text-lg">{plan.name}</CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
@@ -62,7 +67,7 @@ export function Pricing({
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3 text-sm">
                       <Check
-                        className="mt-0.5 size-4 shrink-0 text-primary"
+                        className="mt-0.5 size-4 shrink-0 text-brand"
                         aria-hidden
                       />
                       {feature}

@@ -1,3 +1,4 @@
+import { Logo } from "@/components/brand/logo";
 import { Footer } from "@/components/sections/footer";
 import { Navbar } from "@/components/sections/navbar";
 import { WhatsAppButton } from "@/components/sections/whatsapp-button";
@@ -11,10 +12,11 @@ export default function SiteLayout({
 }>) {
   return (
     <>
-      <Navbar brand={siteConfig.name} items={navItems} cta={navCta} />
+      <Navbar brand={<Logo />} items={navItems} cta={navCta} />
       {children}
       <Footer
-        brand={siteConfig.name}
+        brand={<Logo />}
+        brandName={siteConfig.name}
         description={siteConfig.description}
         items={footerItems}
       />

@@ -14,7 +14,7 @@ export function Stats({ id, stats }: StatsProps) {
         {stats.map((stat, index) => (
           <Reveal key={stat.label} delay={index * 0.08}>
             <div className="flex flex-col gap-2">
-              <dd className="order-1 text-4xl font-semibold tracking-tight sm:text-5xl">
+              <dd className="order-1 bg-gradient-to-r from-brand to-brand-2 bg-clip-text text-4xl font-semibold tracking-tight text-transparent sm:text-5xl">
                 {stat.value}
               </dd>
               <dt className="order-2 text-sm text-muted-foreground">

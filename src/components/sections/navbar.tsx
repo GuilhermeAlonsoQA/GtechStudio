@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import type { CtaLink, NavItem } from "@/types";
 
 interface NavbarProps {
-  brand: string;
+  brand: React.ReactNode;
   items: NavItem[];
   cta: CtaLink;
 }

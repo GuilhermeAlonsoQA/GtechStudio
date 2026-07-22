@@ -21,7 +21,14 @@ export function NicheLanding({ template }: NicheLandingProps) {
     <>
       <DemoBanner nicheLabel={template.nicheLabel} />
       <Navbar
-        brand={template.business.name}
+        brand={
+          <span className="flex items-center gap-2.5">
+            <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+              <template.nicheIcon className="size-4.5" aria-hidden />
+            </span>
+            {template.business.name}
+          </span>
+        }
         items={template.nav}
         cta={template.navCta}
       />
@@ -66,6 +73,7 @@ export function NicheLanding({ template }: NicheLandingProps) {
       </main>
       <Footer
         brand={template.business.name}
+        brandName={template.business.name}
         description={template.footerDescription}
         items={template.nav}
       />

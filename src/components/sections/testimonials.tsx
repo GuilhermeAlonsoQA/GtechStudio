@@ -24,7 +24,7 @@ export function Testimonials({
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((testimonial, index) => (
           <Reveal key={testimonial.author} delay={index * 0.08}>
-            <Card className="h-full">
+            <Card className="h-full transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-md">
               <CardContent className="flex-1">
                 <blockquote className="text-pretty text-muted-foreground">
                   “{testimonial.quote}”
