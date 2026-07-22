@@ -8,7 +8,7 @@ interface SectionProps {
 
 export function Section({ id, className, children }: SectionProps) {
   return (
-    <section id={id} className={cn("py-20 sm:py-28", className)}>
+    <section id={id} className={cn("scroll-mt-16 py-20 sm:py-28", className)}>
       <div className="mx-auto w-full max-w-6xl px-6">{children}</div>
     </section>
   );

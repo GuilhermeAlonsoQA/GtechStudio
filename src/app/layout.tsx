@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import { Footer } from "@/components/sections/footer";
+import { Navbar } from "@/components/sections/navbar";
+import { WhatsAppButton } from "@/components/sections/whatsapp-button";
+import { footerItems, navCta, navItems } from "@/lib/content/site";
 import { siteConfig } from "@/lib/site-config";
 
 import "@/styles/globals.css";
@@ -44,15 +48,38 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  description: siteConfig.description,
+  email: siteConfig.links.email,
+  sameAs: [siteConfig.links.instagram],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
+        <Navbar brand={siteConfig.name} items={navItems} cta={navCta} />
         {children}
+        <Footer
+          brand={siteConfig.name}
+          description={siteConfig.description}
+          items={footerItems}
+        />
+        <WhatsAppButton href={siteConfig.links.whatsapp} />
       </body>
     </html>
   );

@@ -17,14 +17,16 @@
 - WhatsApp Button flutuante
 - Animações discretas de entrada (Framer Motion via `Reveal`, com suporte a `prefers-reduced-motion`)
 
-## Sprint 3 — Site institucional da Gtech Studio (próxima)
+## Sprint 3 — Site institucional da Gtech Studio ✅
 
-- Home completa composta pelas seções
-- Formulário de contato (RHF + Zod)
-- Schema.org (Organization)
-- Ajustes de performance (Lighthouse > 95)
+- Home completa composta pelas seções (Hero, Stats, Services, Pricing, FAQ, CTA, Contact)
+- Conteúdo separado dos componentes em `src/lib/content/`
+- Formulário de contato (RHF + Zod) com envio via WhatsApp pré-preenchido
+- Schema.org (Organization) no layout raiz
+- Navbar, Footer e WhatsApp Button no layout (compartilhados por futuras páginas)
+- Nota: seção Testimonials fica fora da home até existirem depoimentos reais de clientes
 
-## Sprint 4 — Sistema de templates por nicho
+## Sprint 4 — Sistema de templates por nicho (próxima)
 
 - Estrutura de conteúdo por nicho (dados tipados)
 - Template Advogados (primeiro nicho)

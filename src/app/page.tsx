@@ -1,31 +1,60 @@
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-
-import { siteConfig } from "@/lib/site-config";
+import { Contact } from "@/components/sections/contact";
+import { Cta } from "@/components/sections/cta";
+import { Faq } from "@/components/sections/faq";
+import { Hero } from "@/components/sections/hero";
+import { Pricing } from "@/components/sections/pricing";
+import { Services } from "@/components/sections/services";
+import { Stats } from "@/components/sections/stats";
+import { ContactForm } from "@/features/contact-form/contact-form";
+import {
+  contactChannels,
+  faq,
+  finalCta,
+  hero,
+  pricing,
+  services,
+  stats,
+} from "@/lib/content/home";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-dvh flex-col items-center justify-center px-6">
-      <section className="mx-auto flex max-w-3xl flex-col items-center gap-8 text-center">
-        <p className="text-sm font-medium tracking-widest text-muted-foreground uppercase">
-          {siteConfig.name}
-        </p>
-        <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-6xl">
-          Landing Pages Premium que transformam visitantes em clientes
-        </h1>
-        <p className="max-w-xl text-lg text-pretty text-muted-foreground">
-          Presença digital sofisticada para profissionais liberais e pequenas
-          empresas. Design elegante, performance extrema e foco total em
-          conversão.
-        </p>
-        <Link
-          href={siteConfig.links.whatsapp}
-          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-        >
-          Fale com a gente
-          <ArrowRight className="size-4" aria-hidden />
-        </Link>
-      </section>
+    <main>
+      <Hero {...hero} />
+      <Stats stats={stats} />
+      <Services
+        id="servicos"
+        eyebrow="Serviços"
+        title="Tudo o que a sua presença digital precisa"
+        description="Do design à publicação, cuidamos de cada detalhe para o seu negócio ser encontrado e escolhido."
+        services={services}
+      />
+      <Pricing
+        id="planos"
+        eyebrow={pricing.eyebrow}
+        title={pricing.title}
+        description={pricing.description}
+        plans={pricing.plans}
+      />
+      <Faq
+        id="faq"
+        eyebrow="Dúvidas frequentes"
+        title="Perguntas que recebemos todos os dias"
+        items={faq}
+      />
+      <Cta
+        title={finalCta.title}
+        description={finalCta.description}
+        cta={finalCta.cta}
+      />
+      <Contact
+        id="contato"
+        eyebrow="Contato"
+        title="Vamos conversar sobre o seu projeto"
+        description="Preencha o formulário ou fale direto pelos nossos canais."
+        channels={contactChannels}
+      >
+        <ContactForm />
+      </Contact>
     </main>
   );
 }
