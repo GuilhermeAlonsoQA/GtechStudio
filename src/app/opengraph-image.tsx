@@ -36,16 +36,16 @@ export default function OpenGraphImage() {
           </defs>
           <rect width="32" height="32" rx="9" fill="#171717" />
           <path
-            d="M 22.66 10.34 A 8 8 0 1 0 24 16"
+            d="M 20 9.07 A 8 8 0 1 0 24 16"
             fill="none"
             stroke="url(#g)"
-            strokeWidth="3"
+            strokeWidth="3.2"
             strokeLinecap="round"
           />
           <path
-            d="M 24 16 H 17.5"
+            d="M 24 16 H 16.5"
             stroke="url(#g)"
-            strokeWidth="3"
+            strokeWidth="3.2"
             strokeLinecap="round"
           />
         </svg>

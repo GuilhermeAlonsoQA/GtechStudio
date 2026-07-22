@@ -45,7 +45,22 @@
 - Sitemap com 10 URLs (home + índice + 8 modelos)
 - Todos os 8 nichos do master prompt concluídos
 
-## Sprint 6+ — Backlog
+## Sprint 6 — CI, deploy e Open Graph ✅
+
+- GitHub Actions: CI (lint + typecheck + build) em cada push e PR
+- Deploy automático na Vercel via secret `VERCEL_TOKEN` (produção em gtech-studio.vercel.app)
+- Imagem Open Graph gerada com next/og
+- Correção de acessibilidade no Reveal (prefers-reduced-motion)
+
+## Sprint 7 — Identidade visual e refinamento premium ✅
+
+- Logo autêntico: monograma G geométrico com gradiente da marca (indigo → violeta)
+- Tokens `brand`/`brand-2` aplicados cirurgicamente (hero, stats, eyebrows, ícones, selo de plano)
+- Hero com glow radial, grade de pontos e badge em pílula; CTA como ilha escura com glow
+- Galeria `/modelos` com mockups de navegador gerados em CSS/SVG por template
+- Templates de nicho com identidade própria na navbar (ícone em tile + nome)
+
+## Sprint 8+ — Backlog
 
 - Guia de captação (Google Business Profile)
 - Seção Testimonials na home da Gtech quando houver depoimentos reais

@@ -13,6 +13,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { TemplatePreview } from "@/components/templates/template-preview";
 import { templates } from "@/lib/content/templates";
 
 export const metadata: Metadata = {
@@ -36,11 +37,16 @@ export default function TemplatesPage() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {templates.map((template, index) => (
             <Reveal key={template.slug} delay={index * 0.06}>
-              <Card className="h-full transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-md">
+              <Card className="h-full gap-4 pt-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-md">
+                <CardContent className="px-4">
+                  <Link
+                    href={`/modelos/${template.slug}`}
+                    aria-label={`Ver modelo para ${template.nicheLabel}`}
+                  >
+                    <TemplatePreview template={template} />
+                  </Link>
+                </CardContent>
                 <CardHeader>
-                  <span className="mb-3 inline-flex size-10 items-center justify-center rounded-lg border bg-muted/60">
-                    <template.nicheIcon className="size-5 text-brand" aria-hidden />
-                  </span>
                   <CardTitle>{template.nicheLabel}</CardTitle>
                   <CardDescription>{template.business.name}</CardDescription>
                 </CardHeader>
@@ -52,7 +58,7 @@ export default function TemplatesPage() {
                 <CardFooter>
                   <Button asChild variant="outline" className="w-full">
                     <Link href={`/modelos/${template.slug}`}>
-                      Ver modelo
+                      Ver modelo completo
                       <ArrowRight aria-hidden />
                     </Link>
                   </Button>
