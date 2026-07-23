@@ -60,7 +60,23 @@
 - Galeria `/modelos` com mockups de navegador gerados em CSS/SVG por template
 - Templates de nicho com identidade própria na navbar (ícone em tile + nome)
 
-## Sprint 8+ — Backlog
+## Sprint 9 — Arquitetura pronta para fotografia ✅
+
+- Componente `NicheVisual`: usa `next/image` quando a foto existe em `public/`
+  e cai graciosamente para um painel de gradiente com o ícone do nicho até a
+  foto ser enviada (aparece sozinha ao subir o arquivo)
+- Hero dos templates redesenhado em duas colunas (texto + visual, com selo de
+  confiança flutuante e avaliação em estrelas)
+- Novas seções por template: `Sobre` (texto + imagem + diferenciais) e
+  `Galeria` (grade de imagens)
+- Conteúdo `about` próprio para cada um dos 8 nichos
+- Convenção de imagens documentada em `public/images/README.md`
+- Alt text descritivo em todas as imagens (SEO/acessibilidade)
+
+## Sprint 10+ — Backlog
+
+- Substituir os placeholders pelas fotos reais de cada nicho (upload em `public/images/`)
+- Hero fotográfico também na home da Gtech quando houver imagem institucional
 
 - Guia de captação (Google Business Profile)
 - Seção Testimonials na home da Gtech quando houver depoimentos reais

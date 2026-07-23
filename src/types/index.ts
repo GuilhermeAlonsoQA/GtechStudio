@@ -64,6 +64,17 @@ export interface NicheTemplate {
     from: string;
     to: string;
   };
+  images: {
+    hero: string;
+    about: string;
+    gallery: string[];
+  };
+  about: {
+    eyebrow?: string;
+    title: string;
+    paragraphs: string[];
+    highlights: string[];
+  };
   business: {
     name: string;
     whatsapp: string;

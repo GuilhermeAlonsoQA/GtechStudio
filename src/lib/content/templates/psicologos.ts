@@ -22,6 +22,24 @@ export const psicologos: NicheTemplate = {
     from: "#7c3aed",
     to: "#ec4899",
   },
+  images: {
+    hero: "/images/psicologos/hero.jpg",
+    about: "/images/psicologos/about.jpg",
+    gallery: ["/images/psicologos/1.jpg", "/images/psicologos/2.jpg", "/images/psicologos/3.jpg"],
+  },
+  about: {
+    eyebrow: "Sobre",
+    title: "Um espaço seguro para você ser quem é",
+    paragraphs: [
+      "Acreditamos que cuidar da saúde mental é um ato de coragem. Por isso oferecemos um ambiente sigiloso e acolhedor, onde você pode se expressar sem julgamentos.",
+      "O acompanhamento é construído junto com você, respeitando o seu tempo e a sua história, com abordagens baseadas em evidências.",
+    ],
+    highlights: [
+      "Sigilo absoluto garantido pelo Código de Ética",
+      "Atendimento presencial e online com a mesma qualidade",
+      "Plano terapêutico personalizado para cada pessoa",
+    ],
+  },
   business: {
     name: "Espaço Mente Leve",
     whatsapp,

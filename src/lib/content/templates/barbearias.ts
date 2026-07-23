@@ -22,6 +22,24 @@ export const barbearias: NicheTemplate = {
     from: "#b91c1c",
     to: "#f59e0b",
   },
+  images: {
+    hero: "/images/barbearias/hero.jpg",
+    about: "/images/barbearias/about.jpg",
+    gallery: ["/images/barbearias/1.jpg", "/images/barbearias/2.jpg", "/images/barbearias/3.jpg"],
+  },
+  about: {
+    eyebrow: "Sobre",
+    title: "Tradição de barbearia com conforto de clube",
+    paragraphs: [
+      "Aqui o corte é levado a sério: barbeiros experientes, produtos premium e aquele ambiente onde dá gosto sentar na cadeira e relaxar.",
+      "Horário marcado pelo WhatsApp, sem fila e sem espera, para você cuidar do visual no seu tempo.",
+    ],
+    highlights: [
+      "Barbeiros experientes e produtos premium",
+      "Agendamento pelo WhatsApp, sem fila",
+      "Plano de assinatura com horário preferencial",
+    ],
+  },
   business: {
     name: "Barbearia Navalha de Ouro",
     whatsapp,

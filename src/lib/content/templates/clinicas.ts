@@ -22,6 +22,24 @@ export const clinicas: NicheTemplate = {
     from: "#0369a1",
     to: "#22d3ee",
   },
+  images: {
+    hero: "/images/clinicas/hero.jpg",
+    about: "/images/clinicas/about.jpg",
+    gallery: ["/images/clinicas/1.jpg", "/images/clinicas/2.jpg", "/images/clinicas/3.jpg"],
+  },
+  about: {
+    eyebrow: "Sobre",
+    title: "Saúde integrada para toda a família, perto de você",
+    paragraphs: [
+      "Reunimos diversas especialidades, exames e check-ups em um só lugar, com uma equipe experiente e estrutura moderna.",
+      "Agendamento rápido, resultados online e um atendimento que trata você pelo nome, em cada fase da vida.",
+    ],
+    highlights: [
+      "Diversas especialidades em um só lugar",
+      "Exames com coleta na própria clínica",
+      "Agendamento em minutos pelo WhatsApp",
+    ],
+  },
   business: {
     name: "Clínica Vitalis",
     whatsapp,

@@ -22,6 +22,24 @@ export const arquitetos: NicheTemplate = {
     from: "#c2410c",
     to: "#fbbf24",
   },
+  images: {
+    hero: "/images/arquitetos/hero.jpg",
+    about: "/images/arquitetos/about.jpg",
+    gallery: ["/images/arquitetos/1.jpg", "/images/arquitetos/2.jpg", "/images/arquitetos/3.jpg"],
+  },
+  about: {
+    eyebrow: "Sobre",
+    title: "Espaços que unem estética, função e orçamento",
+    paragraphs: [
+      "Cada projeto nasce de uma escuta atenta ao seu jeito de viver ou de fazer negócio, e se transforma em um espaço com identidade e propósito.",
+      "Acompanhamos do primeiro traço à entrega da obra, garantindo que o resultado seja fiel ao projeto — e ao orçamento combinado.",
+    ],
+    highlights: [
+      "Projetos residenciais e comerciais sob medida",
+      "Aprovação em prefeitura conduzida por nós",
+      "Acompanhamento de obra, sem surpresas",
+    ],
+  },
   business: {
     name: "Atelier Forma Arquitetura",
     whatsapp,

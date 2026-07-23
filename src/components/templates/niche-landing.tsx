@@ -2,13 +2,15 @@ import { Contact } from "@/components/sections/contact";
 import { Cta } from "@/components/sections/cta";
 import { Faq } from "@/components/sections/faq";
 import { Footer } from "@/components/sections/footer";
-import { Hero } from "@/components/sections/hero";
 import { Navbar } from "@/components/sections/navbar";
 import { Services } from "@/components/sections/services";
 import { Stats } from "@/components/sections/stats";
 import { Testimonials } from "@/components/sections/testimonials";
 import { WhatsAppButton } from "@/components/sections/whatsapp-button";
 import { DemoBanner } from "@/components/templates/demo-banner";
+import { NicheAbout } from "@/components/templates/niche-about";
+import { NicheGallery } from "@/components/templates/niche-gallery";
+import { NicheHero } from "@/components/templates/niche-hero";
 import { ContactForm } from "@/features/contact-form/contact-form";
 import type { NicheTemplate } from "@/types";
 
@@ -40,14 +42,22 @@ export function NicheLanding({ template }: NicheLandingProps) {
         cta={template.navCta}
       />
       <main>
-        <Hero {...template.hero} />
+        <NicheHero template={template} />
         <Stats stats={template.stats} />
+        <NicheAbout id="sobre" template={template} />
         <Services
           id="servicos"
           eyebrow={template.services.eyebrow}
           title={template.services.title}
           description={template.services.description}
           services={template.services.items}
+        />
+        <NicheGallery
+          id="galeria"
+          eyebrow="Galeria"
+          title="Um pouco do nosso dia a dia"
+          description="Ambiente, atendimento e resultados que fazem parte da experiência."
+          template={template}
         />
         <Testimonials
           id="depoimentos"

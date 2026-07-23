@@ -21,6 +21,24 @@ export const advogados: NicheTemplate = {
     from: "#92400e",
     to: "#f59e0b",
   },
+  images: {
+    hero: "/images/advogados/hero.jpg",
+    about: "/images/advogados/about.jpg",
+    gallery: ["/images/advogados/1.jpg", "/images/advogados/2.jpg", "/images/advogados/3.jpg"],
+  },
+  about: {
+    eyebrow: "Sobre",
+    title: "Um escritório construído sobre confiança e resultado",
+    paragraphs: [
+      "Somos um escritório de advocacia dedicado a defender os interesses de pessoas e empresas com técnica apurada e proximidade real. Cada caso recebe atenção individual, do primeiro atendimento à decisão final.",
+      "Nossa atuação é pautada pela ética, pela transparência nos honorários e pela comunicação clara — sem juridiquês e sem deixar você no escuro.",
+    ],
+    highlights: [
+      "Atendimento personalizado, sem terceirização de casos",
+      "Atualização constante sobre o andamento do processo",
+      "Honorários combinados por escrito, sem surpresas",
+    ],
+  },
   business: {
     name: "Almeida & Prado Advocacia",
     whatsapp,

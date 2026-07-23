@@ -22,6 +22,24 @@ export const contadores: NicheTemplate = {
     from: "#047857",
     to: "#2dd4bf",
   },
+  images: {
+    hero: "/images/contadores/hero.jpg",
+    about: "/images/contadores/about.jpg",
+    gallery: ["/images/contadores/1.jpg", "/images/contadores/2.jpg", "/images/contadores/3.jpg"],
+  },
+  about: {
+    eyebrow: "Sobre",
+    title: "Contabilidade que trabalha pelo seu crescimento",
+    paragraphs: [
+      "Mais do que cumprir obrigações, ajudamos a sua empresa a tomar decisões melhores com informação contábil clara e no tempo certo.",
+      "Nossa equipe cuida da burocracia para você focar no que importa: fazer o seu negócio crescer, com prazos sempre cumpridos.",
+    ],
+    highlights: [
+      "Planejamento tributário para pagar só o necessário",
+      "Obrigações entregues no prazo, todos os meses",
+      "Atendimento próximo, com linguagem que você entende",
+    ],
+  },
   business: {
     name: "Contare Contabilidade",
     whatsapp,

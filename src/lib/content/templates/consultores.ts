@@ -22,6 +22,24 @@ export const consultores: NicheTemplate = {
     from: "#1d4ed8",
     to: "#38bdf8",
   },
+  images: {
+    hero: "/images/consultores/hero.jpg",
+    about: "/images/consultores/about.jpg",
+    gallery: ["/images/consultores/1.jpg", "/images/consultores/2.jpg", "/images/consultores/3.jpg"],
+  },
+  about: {
+    eyebrow: "Sobre",
+    title: "Método e clareza para o seu negócio crescer",
+    paragraphs: [
+      "Ajudamos pequenas e médias empresas a saírem do operacional e enxergarem o próprio negócio com clareza, através de diagnóstico honesto e planos de ação executáveis.",
+      "Não entregamos relatórios para engavetar: acompanhamos a execução até o resultado aparecer nos números.",
+    ],
+    highlights: [
+      "Diagnóstico completo de finanças, processos e equipe",
+      "Plano de ação com responsáveis e prazos definidos",
+      "Acompanhamento próximo até o resultado",
+    ],
+  },
   business: {
     name: "Vetor Consultoria",
     whatsapp,

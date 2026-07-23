@@ -22,6 +22,24 @@ export const dentistas: NicheTemplate = {
     from: "#0e7490",
     to: "#22d3ee",
   },
+  images: {
+    hero: "/images/dentistas/hero.jpg",
+    about: "/images/dentistas/about.jpg",
+    gallery: ["/images/dentistas/1.jpg", "/images/dentistas/2.jpg", "/images/dentistas/3.jpg"],
+  },
+  about: {
+    eyebrow: "Sobre",
+    title: "Tecnologia de ponta com um atendimento que acolhe",
+    paragraphs: [
+      "Nossa clínica reúne profissionais experientes e equipamentos modernos para oferecer tratamentos previsíveis, seguros e confortáveis para toda a família.",
+      "Do primeiro contato ao pós-tratamento, cuidamos de cada detalhe com protocolos rigorosos de biossegurança e um atendimento que coloca você em primeiro lugar.",
+    ],
+    highlights: [
+      "Planejamento digital e materiais de alta qualidade",
+      "Ambiente acolhedor, pensado para reduzir o medo",
+      "Planos de tratamento transparentes e parcelados",
+    ],
+  },
   business: {
     name: "Clínica Sorriso Prime",
     whatsapp,
