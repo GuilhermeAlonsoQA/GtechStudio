@@ -25,7 +25,7 @@ export const psicologos: NicheTemplate = {
   images: {
     hero: "/images/psicologos/hero.jpg",
     about: "/images/psicologos/about.jpg",
-    gallery: ["/images/psicologos/1.jpg", "/images/psicologos/2.jpg", "/images/psicologos/3.jpg"],
+    gallery: [],
   },
   about: {
     eyebrow: "Sobre",
